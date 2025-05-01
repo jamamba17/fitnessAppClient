@@ -1,0 +1,8 @@
+{
+    "url": "",
+    "endpoints": {
+        "register": "/register",
+        "login": "/login",
+        "workouts": "/workouts"
+    }
+}
