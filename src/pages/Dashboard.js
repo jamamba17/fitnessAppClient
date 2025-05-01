@@ -43,7 +43,7 @@ export default function Dashboard() {
     const fetchWorkouts = () => {
         setLoading(true);
         
-        fetch('https://fitnessapp.api.h8lu.onrender.com/workouts/getMyWorkouts', {
+        fetch('https://fitnessapp-api-ln8u.onrender.com/workouts/getMyWorkouts', {
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`
             }
@@ -127,7 +127,7 @@ export default function Dashboard() {
     const addWorkout = (e) => {
         e.preventDefault();
         
-        fetch('https://fitnessapp.api.h8lu.onrender.com/workouts/addWorkout', {
+        fetch('https://fitnessapp-api-ln8u.onrender.com/workouts/addWorkout', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -165,7 +165,7 @@ export default function Dashboard() {
     
     // Function to mark a workout as completed
     const completeWorkout = (id) => {
-        fetch(`https://fitnessapp.api.h8lu.onrender.com/workouts/completeWorkoutStatus/${id}`, {
+        fetch(`https://fitnessapp-api-ln8u.onrender.com/workouts/completeWorkoutStatus/${id}`, {
             method: 'PATCH',
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`
@@ -191,7 +191,7 @@ export default function Dashboard() {
     // Function to delete a workout
     const deleteWorkout = (id) => {
         if (window.confirm('Are you sure you want to delete this workout?')) {
-            fetch(`https://fitnessapp.api.h8lu.onrender.com/workouts/deleteWorkout/${id}`, {
+            fetch(`https://fitnessapp-api-ln8u.onrender.com/workouts/deleteWorkout/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`

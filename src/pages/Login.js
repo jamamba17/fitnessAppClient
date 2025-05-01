@@ -17,7 +17,7 @@ export default function Login() {
     function authenticate(e) {
         // Prevents page redirection via form submission
         e.preventDefault();
-        fetch('https://fitnessapp.api.h8lu.onrender.com/users/login', {
+        fetch('https://fitnessapp-api-ln8u.onrender.com/users/login', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
@@ -53,7 +53,7 @@ export default function Login() {
 
     function retrieveUserDetails(token){
         // The token will be sent as part of the request's header information
-        fetch('https://fitnessapp.api.h8lu.onrender.com/users/details', {
+        fetch('https://fitnessapp-api-ln8u.onrender.com/users/details', {
             headers: {
                 Authorization: `Bearer ${token}`
             }

@@ -21,7 +21,7 @@ export default function Register() {
         // Prevents page redirection via form submission
         e.preventDefault();
 
-        fetch('https://fitnessapp.api.h8lu.onrender.com/users/register', {
+        fetch('https://fitnessapp-api-ln8u.onrender.com/users/register', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"

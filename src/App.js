@@ -22,7 +22,7 @@ function App() {
         // Check if user is logged in via token
         const token = localStorage.getItem('token');
         if (token) {
-            fetch('https://fitnessapp.api.h8lu.onrender.com/users/details', {
+            fetch('https://fitnessapp-api-ln8u.onrender.com/users/details', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
